@@ -3,53 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
     <style>
         html{background: ghostwhite;}
-        ul{display: flex;flex-direction: row; justify-content: center; background: darkred;}
-        ul a{margin-inline: 30px; color: white;}
+        ul {display: flex; flex-direction: row; justify-content: center; background: darkred; color: white;}
+        ul h3{margin-inline: 30px}
+        ul a{ color: white;}
         footer{background: lightgray; margin: auto; padding: 1px;}
         main{width: 1400px; background: white; margin: auto;}
-
-        .hola{color: blueviolet; display: none;}
-        .adios{color: aqua;}
-
-
     </style>
+
 </head>
+
 <body>
     <header>
         <h1>Rodrigo Menendez Molina</h1>
-        <article>
+        <article class="menu">
             <ul>
-                <a href="/principal.html"><h3>Inicio</h3></a>
-                <a href=""><h3>Sobre mi</h3></a>
-                <a href=""><h3>Formación</h3></a>
-                <a href=""><h3>Titulos</h3></a>
-                <a href=""><h3>Portafolio</h3></a>
+                <h3 data-section="inicio">Inicio</h3>
+                <h3 data-section="sobreMi">Sobre mi</h3>
+                <h3 data-section="formacion">Formación</h3>
+                <h3 data-section="titulos">Titulos e idiomas</h3>
+                <h3 data-section="experiencia">Experiencia laboral</h3>
+                <h3 data-section="contacto">Contacto</h3>
+                <h3 data-section="portafolio">Portafolio</h3>
                 <a href="/curriculum.html"><h3>Curriculum</h3></a>
-                <a href="/contacto.html"><h3>Contacto</h3></a>
             </ul>
         </article>
     </header>
-    <!--Aqui empieza el main-->
+
     <main>
-        <article class="hola">
-            <p>Hola</p>
+        <article id="inicio" class="seccion" style="display: block;">
+            <p>Inicio</p>
         </article>
-
-
-
-
-
-
-
-        <article class="adios">
-            <p>Adios</p>
+        <article id="sobreMi" class="seccion" style="display: none;">
+            <p>Sobre mi</p>
         </article>
-    
+        <article id="formacion" class="seccion" style="display: none;">
+            <p>Formacion</p>
+        </article>
+        <article id="titulos" class="seccion" style="display: none;">
+            <p>Titulos e idiomas</p>
+        </article>
+        <article id="contacto" class="seccion" style="display: none;">
+            <p>Contacto</p>
+        </article>
+        <article id="portafolio" class="seccion" style="display: none;">
+            <p>Portafolio</p>
+        </article>
+        <article id="experiencia" class="seccion" style="display: none;">
+            <p>Experiencia laboral</p>
+        </article>
     </main>
+
+    <script>
+        const botones = document.querySelectorAll("ul h3");
+        const secciones = document.querySelectorAll(".seccion");
+
+        botones.forEach(function(boton){
+
+            boton.addEventListener("click", () => {
+                const destino = boton.dataset.section;
+                // evita errores al pulsar Curriculum
+                if (!destino) return; 
+
+                // Ocultar todas
+                secciones.forEach(sec => sec.style.display = "none");
+
+                // Mostrar solo la seleccionada
+                document.getElementById(destino).style.display = "block";
+            });
+
+        });
+    </script>
+
     <footer>
-        <p>(c) Rodrigo Menendez Molina - 2026</p>
+        <p>(c) Rodrigo Menéndez Molina - 2025</p>
     </footer>
+
 </body>
 </html>

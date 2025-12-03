@@ -6,15 +6,26 @@
 
     <style>
         html{background: ghostwhite;}
+        footer{background: lightgray; margin: auto; padding: 1px;}
+        main{width: 1400px; background: white; margin: auto;}
+        article{padding: 5px; margin: 10px;}
+        /*Menu*/
         ul {display: flex; flex-direction: row; justify-content: center; background: darkred; color: white;}
         ul h3{margin-inline: 30px}
         ul a{ color: white;}
-        footer{background: lightgray; margin: auto; padding: 1px;}
-        main{width: 1400px; background: white; margin: auto;}
-
-        .seccion div{margin-top: 20px;}
-        .seccion div p{margin: 5px;margin-left: 50px;}
-        .seccion div h3{margin: 5px;margin-left: 25px; color: #008b8b;}
+        /*Formacion*/
+        #formacion div{margin-top: 20px;}
+        #formacion div p{margin: 5px;margin-left: 50px;}
+        #formacion div h3{margin: 5px;margin-left: 25px; color: #008b8b;}
+        /*Cursos e idiomas*/
+        #cursos h3{margin-left: 10px; color: #008b8b; margin-bottom: 0px;}
+        #cursos p{font-size: 17px; margin-left:34px ;}
+        table{margin-left: 18px ;text-align: left; border-collapse: separate;border-spacing: 15px 5px;}
+        tr td, tr th{font-size: 17px;}
+        /*Experiencia*/
+        #experiencia div{margin-top: 20px;}
+        #experiencia div p{margin: 5px;margin-left: 50px;}
+        #experiencia div h3{margin: 5px;margin-left: 25px; color: #008b8b;}
 
     </style>
 
@@ -28,7 +39,7 @@
                 <h3 data-section="inicio">Inicio</h3>
                 <h3 data-section="sobreMi">Sobre mi</h3>
                 <h3 data-section="formacion">Formación</h3>
-                <h3 data-section="titulos">Titulos e idiomas</h3>
+                <h3 data-section="cursos">Cursos e idiomas</h3>
                 <h3 data-section="experiencia">Experiencia laboral</h3>
                 <h3 data-section="contacto">Contacto</h3>
                 <h3 data-section="portafolio">Portafolio</h3>
@@ -48,7 +59,7 @@
             <h2>Formacion</h2>
                 <div>
                     <h3><b>- Grado superior en desarrollo de aplicaciones multiplataforma (DAM)</b></h3>
-                    <p>Actualmente cursando 2025 - 2027</h4>
+                    <p>2025 - 2027 / Actualmente cursando</h4>
                     <p>Instituto CEAC FP</h4>
                 </div>
                 <div>
@@ -57,9 +68,29 @@
                     <p>Escuelas San Jose Jesuitas</p>
                 </div>
         </article>
-        <article id="titulos" class="seccion" style="display: none;">
-            <h2>Titulos e idiomas</h2>
-            <h3>Titulos</h3>
+        <article id="cursos" class="seccion" style="display: none;">
+            <h2>Cursos e idiomas</h2>
+            <h3>Cursos</h3>
+            <div>
+                <table>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Organización</th>
+                    </tr>
+                    <tr>
+                        <td>Monitor de tiempo libre (MAT)</td>
+                        <td>La Salle</td>
+                    </tr>
+                    <tr>
+                        <td>Carnet de conducir</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Manipulador de aguas y alimentos</td>
+                        <td>Escola Lluerna</td>
+                    </tr>
+                </table>
+            </div>
             <h3>Idiomas</h3>
             <table>
                 <tr>
@@ -79,14 +110,20 @@
                 </tr>
             </table>
         </article>
+        <article id="experiencia" class="seccion" style="display: none;">
+            <h2>Experiencia laboral</h2>
+            <div>
+                <h3>- Monitor en grupo scout</h3>
+                <p> 2025 / Actualmente trabajando</p>
+                <p>Grupo Scout Seeonee (MEV)</p>
+                <p>Descripción</p>
+            </div>
+        </article>
         <article id="contacto" class="seccion" style="display: none;">
             <h2>Contacto</h2>
         </article>
         <article id="portafolio" class="seccion" style="display: none;">
             <h2>Portafolio</h2>
-        </article>
-        <article id="experiencia" class="seccion" style="display: none;">
-            <h2>Experiencia laboral</h2>
         </article>
     </main>
 

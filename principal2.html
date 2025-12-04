@@ -6,26 +6,32 @@
 
     <style>
         html{background: ghostwhite;}
-        footer{background: lightgray; margin: auto; padding: 1px;}
-        main{width: 1400px; background: white; margin: auto;border-radius: 15px;}
+        footer{background: lightgray; margin: auto; padding: 1px; margin-top: 20px;}
+        main{width: 80%; background: white; margin: auto;border-radius: 15px;border: solid whitesmoke;}
         article{padding: 5px; margin: 10px;}
+        h3{color: #008b8b;margin-left: 10px;}
+        header h1{text-align: center; margin-top: 30px; margin-bottom: 0px;}
         /*Menu*/
         ul {display: flex; flex-direction: row; justify-content: center; background: darkred; color: white;}
-        ul h3{margin-inline: 30px}
-        ul a{ color: white;}
+        ul h3, ul a{margin-inline: 30px; color: white;}
+        ul a{margin: 0px;}
         /*Formacion*/
         #formacion div{margin-top: 20px;}
         #formacion div p{margin: 5px;margin-left: 50px;}
-        #formacion div h3{margin: 5px;margin-left: 25px; color: #008b8b;}
+        #formacion div h3{margin: 5px;}
         /*Cursos e idiomas*/
-        #cursos h3{margin-left: 10px; color: #008b8b; margin-bottom: 0px;}
+        #cursos h3{margin-bottom: 0px;}
         #cursos p{font-size: 17px; margin-left:34px ;}
         table{margin-left: 18px ;text-align: left; border-collapse: separate;border-spacing: 15px 5px;}
         tr td, tr th{font-size: 17px;}
         /*Experiencia*/
         #experiencia div{margin-top: 20px;}
         #experiencia div p{margin: 5px;margin-left: 50px;}
-        #experiencia div h3{margin: 5px;margin-left: 25px; color: #008b8b;}
+        #experiencia div h3{margin: 5px;}
+        /*Inicio*/
+        #inicio img{border-radius: 15px; border: solid #008b8b;}
+        #inicio div{display: flex; flex-direction: row; gap: 30px;}
+        /*Contacto*/
 
     </style>
 
@@ -37,7 +43,6 @@
         <article class="menu">
             <ul>
                 <h3 data-section="inicio">Inicio</h3>
-                <h3 data-section="sobreMi">Sobre mi</h3>
                 <h3 data-section="formacion">Formación</h3>
                 <h3 data-section="cursos">Cursos e idiomas</h3>
                 <h3 data-section="experiencia">Experiencia laboral</h3>
@@ -51,9 +56,11 @@
     <main>
         <article id="inicio" class="seccion" style="display: block;">
             <h2>Inicio</h2>
-        </article>
-        <article id="sobreMi" class="seccion" style="display: none;">
-            <h2>Sobre mi</h2>
+            <div>
+                <img src="img/Captura1.png" alt="Imagen">
+                <p>Rodrigo Menéndez Molina</p>
+                <p>Nacido en 2006</p>
+            </div>
         </article>
         <article id="formacion" class="seccion" style="display: none;">
             <h2>Formacion</h2>
@@ -121,6 +128,24 @@
         </article>
         <article id="contacto" class="seccion" style="display: none;">
             <h2>Contacto</h2>
+            <table>
+                <tr>
+                    <td><h3>Email</h3></td>
+                    <td>aja@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><h3>Telefono</h3></td>
+                    <td>888888888</td>
+                </tr>
+                <tr>
+                    <td><h3>Github</h3></td>
+                    <td>github.com</td>
+                </tr>
+                <tr>
+                    <td><h3>LinkedIn</h3></td>
+                    <td>linkedin.com</td>
+                </tr>
+            </table>
         </article>
         <article id="portafolio" class="seccion" style="display: none;">
             <h2>Portafolio</h2>

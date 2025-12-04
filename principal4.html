@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        html{background: ghostwhite; scroll-padding-top: 90px;}
+        footer{background: lightgray; margin: auto; padding: 1px; margin-top: 20px;}
+        main{width: 80%; background: white; margin: auto;border-radius: 15px;border: solid whitesmoke; display:flex;}
+        .izquierda{flex: 1;}/* border-radius: 10px; border: solid; border-image: linear-gradient(to right, red, blue) 1; */
+        .derecha{flex: 1;}
+        article{ margin: 15px;}
+        h3{color: #008b8b;margin-left: 10px;}
+        header h1{text-align: center;}
+        h2{margin-bottom: 1px;}
+        /*Menu*/
+        .menu {position: fixed;top: 0;left: 0;width: 100%;z-index: 1000; margin: 0px;}
+        .menu ul {display: flex;flex-direction: row;justify-content: center;background: darkred;color: white; margin: 0; padding: 10px 0;}
+        .menu ul h3, .menu ul a {margin-inline: 30px; color: white;}
+        /*Formacion*/
+        #formacion div{margin-top: 20px;}
+        #formacion div p{margin: 5px;margin-left: 50px;}
+        #formacion div h3{margin: 5px;}
+        /*Cursos e idiomas*/
+        #cursos h3{margin-bottom: 0px;}
+        #cursos p{font-size: 17px; margin-left:34px ;}
+        #cursos table{margin-left: 18px ;text-align: left; border-collapse: separate;border-spacing: 15px 5px;}
+        #cursos tr td, tr th{font-size: 17px;}
+        /*Experiencia*/
+        #experiencia div{margin-top: 20px;}
+        #experiencia div p{margin: 5px;margin-left: 50px;}
+        #experiencia div h3{margin: 5px;}
+        /*Inicio*/
+        #sobreMi img{border-radius: 15px; border: solid #008b8b;}
+        #sobreMi div{display: flex; flex-direction: row; gap: 30px;}
+        /*Contacto*/
+        #contacto h3{margin: 5px;}
+        #contacto table{border-collapse: separate; border-spacing: 20px 0px;}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Rodrigo Menendez Molina</h1>
+        <article class="menu">
+            <ul>
+                <a href="#sobreMi"><h3>Inicio</h3></a>
+                <a href="#formacion"><h3>Formación</h3></a>
+                <a href="#cursos"><h3>Cursos e idiomas</h3></a>
+                <a href="#experiencia"><h3>Experiencia laboral</h3></a>
+                <a href="#contacto"><h3>Contacto</h3></a>
+                <a href=""><h3>Portafolio</h3></a>
+                <a href="/curriculum.html"><h3>Curriculum</h3></a>
+            </ul>
+        </article>
+    </header>
+    <main>
+        <section class="izquierda">
+            <article id="sobreMi" class="seccion">
+                <h2>Inicio</h2>
+                <div>
+                    <img src="img/Captura1.png" alt="Imagen">
+                    <p>Rodrigo Menéndez Molina</p>
+                    <p>Nacido en 2006</p>
+                </div>
+            </article>
+            <article id="cursos" class="seccion">
+                <h2>Cursos e idiomas</h2>
+                <h3>Cursos</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Organización</th>
+                        </tr>
+                        <tr>
+                            <td>Monitor de tiempo libre (MAT)</td>
+                            <td>La Salle</td>
+                        </tr>
+                        <tr>
+                            <td>Carnet de conducir</td>
+                            <td>DGT</td>
+                        </tr>
+                        <tr>
+                            <td>Manipulador de aguas y alimentos</td>
+                            <td>Escola Lluerna</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Idiomas</h3>
+                <table>
+                    <tr>
+                        <th>Idioma</th>
+                        <th>Nivel</th>
+                        <th>Organización</th>
+                    </tr>
+                    <tr>
+                        <td>Inglés</td>
+                        <td>B2</td>
+                        <td>Cambridge</td>
+                    </tr>
+                    <tr>
+                        <td>Valenciano</td>
+                        <td>C1</td>
+                        <td>Generalitat Valenciana</td>
+                    </tr>
+                </table>
+            </article>
+            <article id="contacto" class="seccion">
+                <h2>Contacto</h2>
+                <table>
+                    <tr>
+                        <td><h3>Email</h3></td>
+                        <td>aja@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Telefono</h3></td>
+                        <td>888888888</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Github</h3></td>
+                        <td>github.com</td>
+                    </tr>
+                    <tr>
+                        <td><h3>LinkedIn</h3></td>
+                        <td>linkedin.com</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section class="derecha">
+            <article id="formacion" class="seccion">
+                <h2>Formacion</h2>
+                    <div>
+                        <h3><b>- Grado superior en desarrollo de aplicaciones multiplataforma (DAM)</b></h3>
+                        <p>2025 - 2027 / Actualmente cursando</h4>
+                        <p>Instituto CEAC FP</h4>
+                    </div>
+                    <div>
+                        <h3><b>- Bachiller itinerario tecnológico</b></h3>
+                        <p>2022 - 2024</p>
+                        <p>Escuelas San Jose Jesuitas</p>
+                    </div>
+            </article>
+            <article id="experiencia" class="seccion">
+                <h2>Experiencia laboral</h2>
+                <div>
+                    <h3>- Monitor en grupo scout</h3>
+                    <p> 2025 / Actualmente trabajando</p>
+                    <p>Grupo Scout Seeonee (MEV)</p>
+                    <p>Descripción</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>(c) Rodrigo Menéndez Molina - 2025</p>
+    </footer>
+</body>
+</html>

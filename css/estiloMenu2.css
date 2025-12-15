@@ -144,6 +144,19 @@ h3{
 #experiencia p{
     margin-top: 5px;
 }
+
+/* ========= CURSOS ========= */
+#cursos table{
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+/* ========= CONTACTO ========= */
+#contacto img{
+    width: 20px;
+}
+
+/* ========= COMPETENCIAS ========= */
 #competencias-tecnicas {
     display: flex;          /* O usar grid si quieres varias filas */
     justify-content: center;
@@ -168,6 +181,7 @@ h3{
     margin: 0;
     text-align: center;
 }
+
 
 /* ========= TABLAS ========= */
 table{
@@ -210,3 +224,4 @@ footer{
         text-align: center;
     }
 }
+

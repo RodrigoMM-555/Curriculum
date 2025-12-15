@@ -1,0 +1,212 @@
+/* ========= RESET Y BASE ========= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-padding-top: 85px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding-top: 40px;
+}
+
+/* ========= HEADER ========= */
+header h1{
+    text-align: center;
+    font-size: 34px;
+    color: rgb(0, 120, 120);
+    text-shadow: 0 0 3px rgba(0,150,150,0.4);
+    margin-bottom: 10px;
+}
+
+/* ========= MENU (IGUAL AL PORTFOLIO) ========= */
+.menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu nav{
+    display: flex;
+    justify-content: center;
+    background: teal;
+    padding: 12px 0;
+}
+
+.menu nav a{
+    margin-inline: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu nav h3{
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu nav a:hover h3{
+    color: lightgray;
+    transform: translateY(-2px);
+}
+
+/* ========= CONTENEDOR PRINCIPAL ========= */
+main{
+    width: 80%;
+    background: white;
+    margin: 40px auto;
+    border-radius: 20px;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    padding: 20px;
+}
+
+.izquierda, .derecha{
+    width: 100%;
+}
+
+/* ========= TARJETAS ========= */
+article{
+    margin: 25px 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+article:hover{
+    transform: scale(1.005);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* ========= TITULOS ========= */
+h2{
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #008b8b;
+    color: #006e6e;
+}
+
+h3{
+    color: #008b8b;
+}
+
+/* ========= SOBRE MI ========= */
+#sobreMi section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f8ffff;
+    border-left: 4px solid #008b8b;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#sobreMi img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #008b8b;
+    box-shadow: 0 0 10px rgba(0,128,128,0.25);
+}
+
+#sobreMi div p{
+    margin-top: 6px;
+}
+
+/* ========= BLOQUES INTERNOS ========= */
+#formacion div,
+#experiencia div,
+#competencias div,
+#cursos table,
+#contacto table{
+    background: #f8ffff;
+    border-left: 4px solid #008b8b;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+#experiencia p{
+    margin-top: 5px;
+}
+#competencias-tecnicas {
+    display: flex;          /* O usar grid si quieres varias filas */
+    justify-content: center;
+    gap: 30px;              /* Espacio entre cada competencia */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#competencias-tecnicas li {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;    /* Centrar horizontalmente */
+}
+
+#competencias-tecnicas li img {
+    width: 70px;
+    margin-bottom: 5px;     /* Espacio entre imagen y texto */
+}
+
+#competencias-tecnicas li p {
+    margin: 0;
+    text-align: center;
+}
+
+/* ========= TABLAS ========= */
+table{
+    border-collapse: separate;
+    border-spacing: 15px 8px;
+}
+
+tr:hover{
+    background: #f0fefe;
+    transition: 0.2s;
+}
+
+/* ========= LISTAS ========= */
+#competencias p{
+    margin: 5px 0;
+}
+
+/* ========= FOOTER ========= */
+footer{
+    background: #e6f2f2;
+    margin-top: 40px;
+    padding: 12px;
+    text-align: center;
+    border-top: 2px solid #cfe6e6;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 600px){
+    .menu nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    #sobreMi section{
+        flex-direction: column;
+        text-align: center;
+    }
+}
